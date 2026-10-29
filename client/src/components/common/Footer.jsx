@@ -1,11 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { FileText, Github, Twitter } from 'lucide-react';
 
 /**
  * Application footer with links and copyright.
  */
 function Footer() {
+  const location = useLocation();
+  // Hide footer on builder workspace so it does not hide or overlap form fields and preview
+  if (location.pathname.startsWith('/builder')) {
+    return null;
+  }
+  
   return (
     <footer className="bg-gray-900 text-gray-400 no-print">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
