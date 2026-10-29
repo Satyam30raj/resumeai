@@ -74,11 +74,11 @@ export default function BuilderPage() {
         </div>
       </div>
 
-      {/* Split Workspace View */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 h-[calc(100vh-140px)]">
+           {/* Split Workspace View */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 h-[calc(100vh-85px)] min-h-0">
         {/* Left: Form Builder (5 cols on lg) */}
         <div
-          className={`lg:col-span-6 xl:col-span-5 h-full ${
+          className={`lg:col-span-6 xl:col-span-5 h-full min-h-0 ${
             activeMobileView === 'builder' ? 'block' : 'hidden lg:block'
           }`}
         >
@@ -87,7 +87,7 @@ export default function BuilderPage() {
 
         {/* Right: Live Preview (7 cols on lg) */}
         <div
-          className={`lg:col-span-6 xl:col-span-7 h-full ${
+          className={`lg:col-span-6 xl:col-span-7 h-full min-h-0 ${
             activeMobileView === 'preview' ? 'block' : 'hidden lg:block'
           }`}
         >
