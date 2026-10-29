@@ -148,5 +148,6 @@ export default function ResumeBuilder({ onOpenAnalyzer }) {
        <div className="p-6 pb-24 overflow-y-auto flex-1 min-h-0">
         {renderActiveSection()}
       </div>
+    </div>
   );
 }
