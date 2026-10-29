@@ -145,7 +145,8 @@ export default function ResumeBuilder({ onOpenAnalyzer }) {
       </div>
 
       {/* Active Form Content */}
-      <div className="p-6 overflow-y-auto flex-1">{renderActiveSection()}</div>
-    </div>
+       <div className="p-6 pb-24 overflow-y-auto flex-1 min-h-0">
+        {renderActiveSection()}
+      </div>
   );
 }
