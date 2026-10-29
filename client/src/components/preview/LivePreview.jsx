@@ -15,7 +15,7 @@ export default function LivePreview() {
   const activeTemplateDef = getTemplate(selectedTemplate);
   const TemplateComponent = activeTemplateDef.component;
 
-    const handleDownloadPDF = async () => {
+  const handleDownloadPDF = async () => {
     if (!resume?._id) {
       toast.error('Please save your resume first before exporting.');
       return;
@@ -73,7 +73,54 @@ export default function LivePreview() {
 
       {/* Control Bar: Zoom & Actions */}
       <div className="bg-white/80 backdrop-blur px-4 py-2 border-b border-gray-200 flex items-center justify-between text-xs text-gray-600 no-print">
-        {/* ... buttons ... */}
+        <div className="flex items-center gap-2">
+          <span className="font-semibold text-gray-700">Preview:</span>
+          <span className="text-gray-500">{activeTemplateDef.name} Template</span>
+        </div>
+
+        <div className="flex items-center gap-2">
+          {/* Zoom Controls */}
+          <div className="flex items-center bg-gray-100 rounded-md p-0.5">
+            <button
+              type="button"
+              onClick={() => setZoom((z) => Math.max(0.5, z - 0.1))}
+              className="p-1 hover:bg-white rounded text-gray-600"
+              title="Zoom Out"
+            >
+              <ZoomOut className="w-3.5 h-3.5" />
+            </button>
+            <span className="text-[11px] px-2 font-mono">{Math.round(zoom * 100)}%</span>
+            <button
+              type="button"
+              onClick={() => setZoom((z) => Math.min(1.2, z + 0.1))}
+              className="p-1 hover:bg-white rounded text-gray-600"
+              title="Zoom In"
+            >
+              <ZoomIn className="w-3.5 h-3.5" />
+            </button>
+          </div>
+
+          {/* Native Print Icon */}
+          <button
+            type="button"
+            onClick={handleBrowserPrint}
+            className="p-1.5 bg-white border border-gray-200 hover:bg-gray-50 rounded text-gray-700"
+            title="Print"
+          >
+            <Printer className="w-3.5 h-3.5" />
+          </button>
+
+          {/* Download PDF Button */}
+          <button
+            type="button"
+            onClick={handleDownloadPDF}
+            disabled={isExporting}
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-blue-600 hover:bg-blue-700 text-white rounded text-xs font-semibold shadow-2xs transition-colors"
+          >
+            <Download className="w-3.5 h-3.5" />
+            {isExporting ? 'Exporting...' : 'Download PDF'}
+          </button>
+        </div>
       </div>
 
       {/* Scaled Preview Canvas */}
