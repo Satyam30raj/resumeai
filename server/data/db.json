@@ -1,0 +1,298 @@
+{
+  "users": [
+    {
+      "id": "c90e1d6b8d0172c3e149f2f9",
+      "_id": "c90e1d6b8d0172c3e149f2f9",
+      "email": "satyam@example.com",
+      "passwordHash": "$2a$12$SSDYm4cX0joON.lOZ/zeSOF.N9a.drQFyvuI6b3el1e76w3wBgG.m",
+      "role": "user",
+      "createdAt": "2026-10-29T14:33:14.093Z"
+    },
+    {
+      "id": "8bf1c356939adc52c3e6b9d5",
+      "_id": "8bf1c356939adc52c3e6b9d5",
+      "email": "rajsatyam3012@gmail.com",
+      "passwordHash": "$2a$12$Ps4zXr8ovb.PanWirVfWbeGxDlKvlb0TS.WS4XuQL3DxKNdsbE8dC",
+      "role": "user",
+      "createdAt": "2026-10-29T14:37:51.142Z"
+    }
+  ],
+  "resumes": [
+    {
+      "id": "099d693497affa44832a979a",
+      "_id": "099d693497affa44832a979a",
+      "userId": "c90e1d6b8d0172c3e149f2f9",
+      "title": "Fullstack Dev Resume",
+      "templateId": "modern",
+      "sections": {
+        "personalInfo": {
+          "fullName": "Satyam Raj",
+          "email": "rajsatyam3012@gmail.com"
+        },
+        "skills": [
+          {
+            "category": "Languages",
+            "items": [
+              "JavaScript",
+              "Python",
+              "SQL"
+            ]
+          }
+        ],
+        "experience": [
+          {
+            "company": "TechCorp",
+            "position": "Frontend Developer",
+            "startDate": "2023",
+            "endDate": "2024",
+            "highlights": [
+              "Built React components."
+            ]
+          }
+        ]
+      },
+      "imageUrl": "",
+      "createdAt": "2026-10-29T14:59:40.604Z",
+      "updatedAt": "2026-10-29T14:59:40.604Z"
+    },
+    {
+      "id": "c24d3bfaef21cd8cb4bb1363",
+      "_id": "c24d3bfaef21cd8cb4bb1363",
+      "userId": "8bf1c356939adc52c3e6b9d5",
+      "title": "Untitled Resume",
+      "templateId": "classic",
+      "sections": {
+        "personalInfo": {
+          "fullName": "",
+          "email": "",
+          "phone": "",
+          "location": "",
+          "linkedin": "",
+          "github": "",
+          "portfolio": ""
+        },
+        "summary": {
+          "content": ""
+        },
+        "education": [],
+        "skills": [],
+        "experience": [],
+        "projects": [],
+        "achievements": []
+      },
+      "imageUrl": "",
+      "createdAt": "2026-10-29T14:42:20.251Z",
+      "updatedAt": "2026-10-29T14:42:20.251Z"
+    },
+    {
+      "id": "3262d94df82eb0ea0b50dae4",
+      "_id": "3262d94df82eb0ea0b50dae4",
+      "userId": "8bf1c356939adc52c3e6b9d5",
+      "title": "Untitled Resume",
+      "templateId": "classic",
+      "sections": {
+        "personalInfo": {
+          "fullName": "",
+          "email": "",
+          "phone": "",
+          "location": "",
+          "linkedin": "",
+          "github": "",
+          "portfolio": ""
+        },
+        "summary": {
+          "content": ""
+        },
+        "education": [],
+        "skills": [],
+        "experience": [],
+        "projects": [],
+        "achievements": []
+      },
+      "imageUrl": "",
+      "createdAt": "2026-10-29T14:42:16.300Z",
+      "updatedAt": "2026-10-29T14:42:16.300Z"
+    },
+    {
+      "id": "b31e70a5c820871f390bb0d3",
+      "_id": "b31e70a5c820871f390bb0d3",
+      "userId": "8bf1c356939adc52c3e6b9d5",
+      "title": "Untitled Resume",
+      "templateId": "classic",
+      "sections": {
+        "personalInfo": {
+          "fullName": "",
+          "email": "",
+          "phone": "",
+          "location": "",
+          "linkedin": "",
+          "github": "",
+          "portfolio": ""
+        },
+        "summary": {
+          "content": ""
+        },
+        "education": [],
+        "skills": [],
+        "experience": [],
+        "projects": [],
+        "achievements": []
+      },
+      "imageUrl": "",
+      "createdAt": "2026-10-29T14:42:09.691Z",
+      "updatedAt": "2026-10-29T14:42:09.691Z"
+    },
+    {
+      "id": "1bb5cdbf717bd4c03448a26b",
+      "_id": "1bb5cdbf717bd4c03448a26b",
+      "userId": "8bf1c356939adc52c3e6b9d5",
+      "title": "Untitled Resume",
+      "templateId": "classic",
+      "sections": {
+        "personalInfo": {
+          "fullName": "",
+          "email": "",
+          "phone": "",
+          "location": "",
+          "linkedin": "",
+          "github": "",
+          "portfolio": ""
+        },
+        "summary": {
+          "content": ""
+        },
+        "education": [],
+        "skills": [],
+        "experience": [],
+        "projects": [],
+        "achievements": []
+      },
+      "imageUrl": "",
+      "createdAt": "2026-10-29T14:42:05.856Z",
+      "updatedAt": "2026-10-29T14:42:05.856Z"
+    },
+    {
+      "id": "213ebd5b9e2a32cbcb1068ef",
+      "_id": "213ebd5b9e2a32cbcb1068ef",
+      "userId": "c90e1d6b8d0172c3e149f2f9",
+      "title": "Satyam Resume",
+      "templateId": "modern",
+      "sections": {},
+      "imageUrl": "",
+      "createdAt": "2026-10-29T14:41:00.493Z",
+      "updatedAt": "2026-10-29T14:41:00.493Z"
+    },
+    {
+      "id": "c0d9c730c3989afeca362634",
+      "_id": "c0d9c730c3989afeca362634",
+      "userId": "8bf1c356939adc52c3e6b9d5",
+      "title": "Untitled Resume",
+      "templateId": "classic",
+      "sections": {
+        "personalInfo": {
+          "fullName": "",
+          "email": "",
+          "phone": "",
+          "location": "",
+          "linkedin": "",
+          "github": "",
+          "portfolio": ""
+        },
+        "summary": {
+          "content": ""
+        },
+        "education": [],
+        "skills": [],
+        "experience": [],
+        "projects": [],
+        "achievements": []
+      },
+      "imageUrl": "",
+      "createdAt": "2026-10-29T14:38:03.647Z",
+      "updatedAt": "2026-10-29T14:38:03.647Z"
+    }
+  ],
+  "analyses": [
+    {
+      "id": "827755f96c3da85991bef394",
+      "_id": "827755f96c3da85991bef394",
+      "resumeId": "099d693497affa44832a979a",
+      "targetRole": "Software Engineer",
+      "score": 49.3,
+      "dimensionScores": {
+        "skillsMatch": 45.3,
+        "experienceRelevance": 71,
+        "sectionCompleteness": 56,
+        "phrasingQuality": 34.5,
+        "quantifiedImpact": 26
+      },
+      "strengths": [
+        "Solid structure and foundation for Software Engineer role.",
+        "Includes 3 skills demonstrating technical aptitude.",
+        "Clear educational background provided."
+      ],
+      "skillGaps": [
+        {
+          "skill": "Data Structures",
+          "importance": "high"
+        },
+        {
+          "skill": "Algorithms",
+          "importance": "high"
+        },
+        {
+          "skill": "Git",
+          "importance": "high"
+        },
+        {
+          "skill": "REST APIs",
+          "importance": "high"
+        }
+      ],
+      "missingSections": [
+        "summary",
+        "projects",
+        "education"
+      ],
+      "suggestions": [
+        {
+          "category": "skills",
+          "location": "Skills Section",
+          "current": "JavaScript, Python, SQL",
+          "recommended": "Explicitly include essential skills for Software Engineer: JavaScript, Python, Java.",
+          "impact": "Aligns keyword relevance with target applicant tracking systems (ATS)."
+        },
+        {
+          "category": "quantification",
+          "location": "Experience / Projects",
+          "current": "Qualitative descriptions of responsibilities",
+          "recommended": "Add measurable metrics (e.g., \"Reduced latency by 25%\", \"Handled 10k+ requests/sec\").",
+          "impact": "Demonstrates tangible impact and increases recruiter engagement."
+        },
+        {
+          "category": "action_verbs",
+          "location": "Bullet points",
+          "current": "Passive or standard phrasing (\"Responsible for\", \"Helped with\")",
+          "recommended": "Start bullet points with strong action verbs: \"Spearheaded\", \"Engineered\", \"Optimized\", \"Architected\".",
+          "impact": "Shows initiative, ownership, and technical confidence."
+        },
+        {
+          "category": "summary",
+          "location": "Professional Summary",
+          "current": "Missing summary",
+          "recommended": "Tailor summary specifically for Software Engineer highlighting key strengths and domain interest.",
+          "impact": "Provides an immediate strong impression in the first 6-second scan."
+        },
+        {
+          "category": "relevance",
+          "location": "Project Section",
+          "current": "No projects listed",
+          "recommended": "Include at least 2 full-stack/domain projects demonstrating React.",
+          "impact": "Validates practical implementation experience for the target role."
+        }
+      ],
+      "modelVersion": "gemini-1.5-flash (local-fallback)",
+      "createdAt": "2026-10-29T14:59:40.619Z"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "resumeai-root",
+  "version": "1.0.0",
+  "description": "ResumeAI — AI-Powered Resume Builder & Analyzer",
+  "scripts": {
+    "build": "npm run install-all && npm run build-client",
+    "install-all": "npm --prefix server install && npm --prefix client install",
+    "build-client": "npm --prefix client run build",
+    "start": "node server/src/index.js",
+    "server": "npm --prefix server run dev",
+    "client": "npm --prefix client run dev"
+  },
+  "keywords": ["resume", "ai", "builder", "analyzer"],
+  "license": "MIT"
+}
