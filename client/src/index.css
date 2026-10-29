@@ -88,18 +88,62 @@ body {
 /* ===== Print Styles for Templates ===== */
 
 @media print {
-  body {
+  @page {
+    size: A4;
     margin: 0;
-    padding: 0;
-    background: white;
   }
 
-  .no-print {
+  *, *::before, *::after {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: white !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* 1. Hide everything on the page by default */
+  body * {
+    visibility: hidden;
+  }
+
+  /* 2. Show only the resume container and all its elements */
+  #resume-print-area,
+  #resume-print-area * {
+    visibility: visible;
+  }
+
+  /* 3. Position the resume container at the very top of the page */
+  #resume-print-area {
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    transform: none !important;
+    border: none !important;
+    background: white !important;
+  }
+
+  /* 4. Completely remove all app chrome from layout */
+  header,
+  footer,
+  nav,
+  .no-print,
+  .no-print * {
     display: none !important;
+    visibility: hidden !important;
   }
 
   .print-only {
     display: block !important;
+    visibility: visible !important;
   }
 }
 
